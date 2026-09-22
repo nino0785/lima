@@ -1,0 +1,39 @@
+/* ============================================================
+   Lima Store — Estilos principais
+   ============================================================ */
+
+/* Rolagem suave ao clicar nos links do menu */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Cores base e fontes padrão */
+body {
+  background-color: oklch(0.975 0.008 85);
+  color: oklch(0.14 0.008 70);
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Títulos usam a fonte editorial (Cormorant Garamond) */
+h1, h2, h3 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+/* ============================================================
+   Animação de entrada (fade + subir)
+   ============================================================ */
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-up {
+    animation: reveal-up 700ms ease-out both;
+  }
+}
+
+/* Linha fina usada acima dos títulos de seção */
+.editorial-rule {
+  border-top: 1px solid oklch(0.82 0.012 78);
+}
