@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lima Store | Moda em Itaitinga</title>
+  <meta name="description" content="Moda masculina, feminina, infantil, fitness e acessórios. Visite a Lima Store em Itaitinga ou compre pelo WhatsApp." />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+
+  <!-- Ícones Lucide -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Estilos do site -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="min-h-screen bg-background text-foreground">
+
+  <!-- Cabeçalho -->
+  <header class="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
+    <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8">
+      <button class="lg:hidden p-2" aria-label="Abrir menu" data-menu-toggle>
+        <i data-lucide="menu" class="size-5"></i>
+      </button>
+      <a href="#inicio" class="font-display text-2xl font-semibold uppercase tracking-[0.26em]">Lima <span class="text-accent">Store</span></a>
+      <nav class="hidden items-center gap-8 text-xs font-medium uppercase tracking-[0.14em] lg:flex" aria-label="Navegação principal">
+        <a href="#colecoes" class="transition-opacity hover:opacity-60">Coleções</a>
+        <a href="#novidades" class="transition-opacity hover:opacity-60">Novidades</a>
+        <a href="#sobre" class="transition-opacity hover:opacity-60">Sobre</a>
+        <a href="#visite" class="transition-opacity hover:opacity-60">Visite a loja</a>
+      </nav>
+      <a href="https://wa.me/5585985458815" target="_blank" rel="noreferrer" aria-label="Comprar pelo WhatsApp" class="p-2">
+        <i data-lucide="shopping-bag" class="size-5"></i>
+      </a>
+    </div>
+    <!-- Menu mobile -->
+    <nav id="menu-mobile" class="hidden border-t border-border bg-background px-5 py-4 lg:hidden">
+      <div class="flex flex-col gap-4 text-xs font-medium uppercase tracking-[0.14em]">
+        <a href="#colecoes">Coleções</a>
+        <a href="#novidades">Novidades</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#visite">Visite a loja</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="relative min-h-[670px] overflow-hidden bg-primary lg:min-h-[760px]">
+      <img src="images/lima-hero.jpg" alt="Moda masculina contemporânea da Lima Store" width="1920" height="1080" fetchpriority="high" class="absolute inset-0 h-full w-full object-cover object-[64%_center]" />
+      <div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/65 to-transparent"></div>
+      <div class="relative mx-auto flex min-h-[670px] max-w-7xl items-center px-5 py-20 lg:min-h-[760px] lg:px-8">
+        <div class="reveal-up max-w-xl text-hero-foreground">
+          <p class="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-gold">Nova estação · Lima Store</p>
+          <h1 class="text-6xl font-medium leading-[0.9] sm:text-7xl lg:text-8xl">Refinado.<br />Moderno.<br />Autêntico.</h1>
+          <p class="mt-7 max-w-sm text-sm leading-6 text-hero-muted">Peças para vestir seu dia a dia, o treino e as ocasiões especiais — para toda a família.</p>
+          <a href="https://wa.me/5585985458815" target="_blank" rel="noreferrer" class="mt-8 inline-flex items-center gap-2 border border-hero-foreground bg-hero-foreground px-7 py-3.5 text-sm font-medium text-primary transition-colors hover:bg-hero-foreground/85">
+            Comprar agora <i data-lucide="arrow-right" class="size-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorias -->
+    <section aria-label="Categorias" class="border-b border-border bg-card">
+      <div class="mx-auto grid max-w-7xl grid-cols-2 divide-x divide-border px-5 sm:grid-cols-5 lg:px-8">
+        <a href="#colecoes" class="flex h-24 items-center justify-center text-xs font-semibold uppercase tracking-[0.12em] transition-colors hover:bg-secondary">Masculino</a>
+        <a href="#colecoes" class="flex h-24 items-center justify-center text-xs font-semibold uppercase tracking-[0.12em] transition-colors hover:bg-secondary">Feminino</a>
+        <a href="#colecoes" class="flex h-24 items-center justify-center text-xs font-semibold uppercase tracking-[0.12em] transition-colors hover:bg-secondary">Infantil</a>
+        <a href="#colecoes" class="flex h-24 items-center justify-center text-xs font-semibold uppercase tracking-[0.12em] transition-colors hover:bg-secondary">Fitness</a>
+        <a href="#colecoes" class="flex h-24 items-center justify-center text-xs font-semibold uppercase tracking-[0.12em] transition-colors hover:bg-secondary">Acessórios</a>
+      </div>
+    </section>
+
+    <!-- Coleções -->
+    <section id="colecoes" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+      <div class="editorial-rule mb-10 flex items-end justify-between pt-5">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">Seleção Lima Store</p>
+          <h2 class="mt-2 text-4xl font-medium sm:text-5xl">Coleções em destaque</h2>
+        </div>
+        <a href="https://wa.me/5585985458815" target="_blank" rel="noreferrer" class="hidden items-center gap-2 text-xs font-semibold uppercase tracking-[0.12em] sm:flex">Ver tudo <i data-lucide="arrow-right" class="size-4"></i></a>
+      </div>
+      <div class="grid gap-4 md:grid-cols-3">
+        <a href="https://wa.me/5585985458815" target="_blank" rel="noreferrer" class="group relative aspect-[4/5] overflow-hidden bg-muted">
+          <img src="images/collection-feminino.jpg" alt="Essenciais femininos" width="1024" height="1280" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/85 to-transparent p-7 pt-24 text-hero-foreground">
+            <p class="text-xs uppercase tracking-[0.14em] text-hero-muted">Leveza para todos os dias</p>
+            <h3 class="mt-1 text-3xl font-medium">Essenciais femininos</h3>
+          </div>
+        </a>
+        <a href="https://wa.me/5585985458815" target="_blank" rel="noreferrer" class="group relative aspect-[4/5] overflow-hidden bg-muted">
+          <img src="images/collection-masculino.jpg" alt="Masculino contemporâneo" width="1024" height="1280" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/85 to-transparent p-7 pt-24 text-hero-foreground">
+            <p class="text-xs uppercase tracking-[0.14em] text-hero-muted">Clássicos com presença</p>
+            <h3 class="mt-1 text-3xl font-medium">Masculino contemporâneo</h3>
+          </div>
+        </a>
+        <a href="https://wa.me/5585985458815" target="_blank" rel="noreferrer" class="group relative aspect-[4/5] overflow-hidden bg-muted">
+          <img src="images/collection-fitness.jpg" alt="Fitness" width="1024" height="1280" loading="lazy" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" />
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-primary/85 to-transparent p-7 pt-24 text-hero-foreground">
+            <p class="text-xs uppercase tracking-[0.14em] text-hero-muted">Movimento com estilo</p>
+            <h3 class="mt-1 text-3xl font-medium">Fitness</h3>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Novidades -->
+    <section id="novidades" class="bg-card py-20 lg:py-24">
+      <div class="mx-auto max-w-7xl px-5 lg:px-8">
+        <div class="editorial-rule mb-10 flex items-end justify-between pt-5">
+          <h2 class="text-4xl font-medium sm:text-5xl">Novidades</h2>
+          <p class="hidden max-w-sm text-right text-sm text-muted-foreground md:block">Um mix de marcas selecionadas para todos os estilos e momentos.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-x-3 gap-y-8 lg:grid-cols-4 lg:gap-x-5">
+          <a href="https://wa.me/5585985458815" target="_blank" rel="noreferrer" class="group">
+            <div class="aspect-[4/5] overflow-hidden bg-muted">
+              <img src="images/collection-masculino.jpg" alt="Polos e camisas" width="1024" height="1280" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+            </div>
+            <p class="mt-4 text-[10px] uppercase tracking-[0.14em] text-muted-foreground">Masculino</p>
+            <h3 class="mt-1 font-sans text-sm font-medium">Polos &amp; camisas</h3>
+          </a>
+          <a href="https://wa.me/5585985458815" target="_blank" rel="noreferrer" class="group">
+            <div class="aspect-[4/5] overflow-hidden bg-muted">
+              <img src="images/collection-feminino.jpg" alt="Conjuntos leves" width="1024" height="1280" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+            </div>
+            <p class="mt-4 text-[10px] uppercase tracking-[0.14em] text-muted-foreground">Feminino</p>
+            <h3 class="mt-1 font-sans text-sm font-medium">Conjuntos leves</h3>
+          </a>
+          <a href="https://wa.me/5585985458815" target="_blank" rel="noreferrer" class="group">
+            <div class="aspect-[4/5] overflow-hidden bg-muted">
+              <img src="images/collection-fitness.jpg" alt="Top e legging" width="1024" height="1280" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+            </div>
+            <p class="mt-4 text-[10px] uppercase tracking-[0.14em] text-muted-foreground">Fitness</p>
+            <h3 class="mt-1 font-sans text-sm font-medium">Top &amp; legging</h3>
+          </a>
+          <a href="https://wa.me/5585985458815" target="_blank" rel="noreferrer" class="group">
+            <div class="aspect-[4/5] overflow-hidden bg-muted">
+              <img src="images/collection-masculino.jpg" alt="Calças e bermudas" width="1024" height="1280" loading="lazy" class="h-full w-full object-cover object-[70%_center] transition-transform duration-500 group-hover:scale-[1.03]" />
+            </div>
+            <p class="mt-4 text-[10px] uppercase tracking-[0.14em] text-muted-foreground">Essenciais</p>
+            <h3 class="mt-1 font-sans text-sm font-medium">Calças &amp; bermudas</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="bg-primary py-20 text-primary-foreground lg:py-28">
+      <div class="mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:px-8">
+        <div>
+          <div class="flex items-center gap-4">
+            <strong class="font-display text-7xl font-medium text-gold">5,0</strong>
+            <div>
+              <div class="flex gap-1 text-gold" aria-label="5 estrelas">
+                <i data-lucide="star" class="size-4 fill-current"></i>
+                <i data-lucide="star" class="size-4 fill-current"></i>
+                <i data-lucide="star" class="size-4 fill-current"></i>
+                <i data-lucide="star" class="size-4 fill-current"></i>
+                <i data-lucide="star" class="size-4 fill-current"></i>
+              </div>
+              <p class="mt-2 text-xs text-hero-muted">avaliação no Google</p>
+            </div>
+          </div>
+          <div class="mt-8 border-t border-hero-foreground/20 pt-8">
+            <p class="text-xs uppercase tracking-[0.16em] text-gold">Desde 2020</p>
+            <p class="mt-3 text-sm leading-6 text-hero-muted">Atendimento próximo, ambiente climatizado e uma seleção pensada para toda a família.</p>
+          </div>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.16em] text-gold">Sobre a loja</p>
+          <h2 class="mt-3 text-5xl font-medium leading-none sm:text-6xl">Uma loja,<br />todos os estilos.</h2>
+          <p class="mt-7 max-w-xl text-sm leading-7 text-hero-muted">A Lima Store Multimarcas reúne roupas e acessórios de diferentes marcas em um só lugar, em Itaitinga. Moda masculina, feminina e infantil, além de opções fitness e acessórios para completar cada escolha.</p>
+          <div class="mt-7 flex flex-wrap gap-2 text-[10px] uppercase tracking-[0.1em]">
+            <span class="border border-hero-foreground/30 px-3 py-2">Física e online</span>
+            <span class="border border-hero-foreground/30 px-3 py-2">Entrega disponível</span>
+            <span class="border border-hero-foreground/30 px-3 py-2">Retirada na porta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visite a loja -->
+    <section id="visite" class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+      <p class="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">Venha nos conhecer</p>
+      <h2 class="mt-2 text-5xl font-medium sm:text-6xl">Visite a loja</h2>
+      <div class="mt-12 grid border-y border-border lg:grid-cols-2 lg:divide-x lg:divide-border">
+        <div class="space-y-8 py-10 lg:pr-14">
+          <div class="flex gap-4">
+            <i data-lucide="map-pin" class="mt-1 size-5 shrink-0 text-accent"></i>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.12em]">Endereço</p>
+              <p class="mt-2 text-sm leading-6 text-muted-foreground">Av. Eta Gavião, Nº 1213 · Ancuri<br />Itaitinga - CE, 61880-000</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <i data-lucide="phone" class="mt-1 size-5 shrink-0 text-accent"></i>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.12em]">Telefone</p>
+              <a class="mt-2 block text-sm text-muted-foreground" href="tel:+5585985458815">(85) 98545-8815</a>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <i data-lucide="instagram" class="mt-1 size-5 shrink-0 text-accent"></i>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.12em]">Instagram</p>
+              <a class="mt-2 block text-sm text-muted-foreground" href="https://instagram.com/limastore.multimarcas" target="_blank" rel="noreferrer">@limastore.multimarcas</a>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center py-10 lg:pl-14">
+          <p class="font-display text-3xl font-medium">Itaitinga · CE</p>
+          <p class="mt-3 max-w-md text-sm leading-6 text-muted-foreground">Loja física climatizada, com atendimento próximo. Compre na loja, peça entrega ou retire na porta.</p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="https://www.google.com/maps/search/?api=1&query=Av.+Eta+Gavião,+1213,+Ancuri,+Itaitinga,+CE" target="_blank" rel="noreferrer" class="inline-flex items-center border border-primary bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/85">Ver no mapa</a>
+            <a href="https://wa.me/5585985458815" target="_blank" rel="noreferrer" class="inline-flex items-center border border-primary px-6 py-3 text-sm font-medium transition-colors hover:bg-secondary">Fale no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-primary text-primary-foreground">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-10 text-xs sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <span class="font-display text-xl uppercase tracking-[0.22em]">Lima Store</span>
+      <p class="text-hero-muted">Moda para todos os estilos · Itaitinga, Ceará</p>
+      <a href="https://instagram.com/limastore.multimarcas" target="_blank" rel="noreferrer" class="uppercase tracking-[0.12em]">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
